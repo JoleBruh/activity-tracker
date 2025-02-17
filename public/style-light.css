@@ -1,0 +1,142 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #3498db;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+#left,
+#right {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.good li,
+.bad li {
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.good li {
+    background-color: #2ecc71;
+    /*color: #fff;*/
+}
+
+.bad li {
+    background-color: #e74c3c;
+    /*color: #fff;*/
+}
+
+.good li:hover {
+    background-color: #27ae60;
+}
+
+.bad li:hover {
+    background-color: #c0392b;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #3498db;
+    transition: border-color 0.3s ease;
+}
+
+input[type="radio"]:checked {
+    border-color: #2980b9;
+    background-color: #3498db;
+}
+
+input[type="text"] {
+    width: calc(100% - 16px);
+    padding: 12px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #fff;
+}
+
+button, #submitID {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, #submitID:hover {
+    background-color: #2980b9;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 16px);
+    padding: 12px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #333;
+    background-color: #fff;
+}
+
+select {
+    padding: 12px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #333;
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+option {
+    background-color: #fff;
+    color: #333;
+}
